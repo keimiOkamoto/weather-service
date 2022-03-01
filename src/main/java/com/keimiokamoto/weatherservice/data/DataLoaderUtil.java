@@ -66,8 +66,8 @@ public class DataLoaderUtil {
 
   private static WeatherStation createWeatherStation(JSONObject weatherStationData) {
     return new WeatherStation(
-        new Double(parseDouble(String.valueOf(weatherStationData.get("lng"))),
-            parseDouble(String.valueOf(weatherStationData.get("lat")))),
+        new Double(parseDouble(String.valueOf(weatherStationData.get("lat"))),
+            parseDouble(String.valueOf(weatherStationData.get("lng")))),
         (String) weatherStationData.get("weather"));
   }
 
