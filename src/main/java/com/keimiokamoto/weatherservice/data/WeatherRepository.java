@@ -1,4 +1,4 @@
-package com.keimiokamoto.weatherservice;
+package com.keimiokamoto.weatherservice.data;
 
 import java.awt.geom.Point2D;
 import java.util.HashMap;

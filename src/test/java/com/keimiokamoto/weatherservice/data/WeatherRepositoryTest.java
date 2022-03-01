@@ -1,4 +1,4 @@
-package com.keimiokamoto.weatherservice;
+package com.keimiokamoto.weatherservice.data;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 

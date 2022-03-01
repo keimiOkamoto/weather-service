@@ -1,6 +1,6 @@
-package com.keimiokamoto.weatherservice;
+package com.keimiokamoto.weatherservice.data;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 import java.awt.geom.Point2D.Double;
 import java.util.Map;

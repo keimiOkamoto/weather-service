@@ -1,9 +1,11 @@
-package com.keimiokamoto.weatherservice;
+package com.keimiokamoto.weatherservice.data;
 
 import static java.lang.Double.*;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.keimiokamoto.weatherservice.domain.CityLocation;
+import com.keimiokamoto.weatherservice.domain.WeatherStation;
 import java.awt.geom.Point2D.Double;
 import java.io.BufferedReader;
 import java.io.InputStream;

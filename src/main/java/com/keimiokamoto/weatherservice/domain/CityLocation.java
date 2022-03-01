@@ -1,4 +1,4 @@
-package com.keimiokamoto.weatherservice;
+package com.keimiokamoto.weatherservice.domain;
 
 import java.awt.geom.Point2D.Double;
 import java.util.Objects;
