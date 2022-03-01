@@ -11,17 +11,20 @@ import org.springframework.stereotype.Service;
 public class WeatherService {
 
   private final WeatherRepository weatherRepository;
+  private Map<String, String> locationToWeatherMap = new HashMap<>();
 
   public WeatherService(WeatherRepository weatherRepository) {
     this.weatherRepository = weatherRepository;
   }
 
   public Map<String, String> getLocationToWeatherMap() {
+    if (locationToWeatherMap.isEmpty()) {
+      locationToWeatherMap = calculateNearestWeatherStationsForCity();
+    }
     return calculateNearestWeatherStationsForCity();
   }
 
   private Map<String, String> calculateNearestWeatherStationsForCity() {
-    Map<String, String> locationToWeatherMap = new HashMap<>();
     for (Entry<Point2D.Double, String> entry1 : weatherRepository.getCityLocationToCityNameMap()
         .entrySet()) {
       double minDistance = Double.MAX_VALUE;
