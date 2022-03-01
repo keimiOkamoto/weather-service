@@ -36,7 +36,7 @@ public class WeatherServiceTest {
   private static Map<Point2D.Double, String> CityLocationToCityName() {
     return Map.of(
         new Point2D.Double(-4.095055, 55.852059), "Glasgow",
-        new Point2D.Double( -0.002505, 51.503892), "London"
+        new Point2D.Double(-0.002505, 51.503892), "London"
     );
   }
 

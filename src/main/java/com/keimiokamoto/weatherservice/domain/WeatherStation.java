@@ -38,4 +38,12 @@ public class WeatherStation {
   public int hashCode() {
     return Objects.hash(getPoint(), getWeatherDescription());
   }
+
+  @Override
+  public String toString() {
+    return "WeatherStation{" +
+        "point=" + point +
+        ", weatherDescription='" + weatherDescription + '\'' +
+        '}';
+  }
 }

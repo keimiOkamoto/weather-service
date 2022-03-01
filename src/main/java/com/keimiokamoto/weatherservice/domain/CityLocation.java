@@ -38,4 +38,12 @@ public class CityLocation {
   public int hashCode() {
     return Objects.hash(getCityName(), getPoint());
   }
+
+  @Override
+  public String toString() {
+    return "CityLocation{" +
+        "cityName='" + cityName + '\'' +
+        ", point=" + point +
+        '}';
+  }
 }

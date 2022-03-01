@@ -1,11 +1,9 @@
 package com.keimiokamoto.weatherservice.api;
 
-
 import com.keimiokamoto.weatherservice.data.WeatherResponse;
 import com.keimiokamoto.weatherservice.service.WeatherService;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

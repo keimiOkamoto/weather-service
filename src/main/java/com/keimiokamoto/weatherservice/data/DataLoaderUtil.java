@@ -1,6 +1,6 @@
 package com.keimiokamoto.weatherservice.data;
 
-import static java.lang.Double.*;
+import static java.lang.Double.parseDouble;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

@@ -38,6 +38,7 @@ public class WeatherService {
   }
 
   private double getDistance(Point2D point1, Point2D point2) {
-    return Math.sqrt(Math.pow(point1.getX() - point2.getX(), 2) + Math.pow(point1.getY() - point2.getY(), 2));
+    return Math.sqrt(
+        Math.pow(point1.getX() - point2.getX(), 2) + Math.pow(point1.getY() - point2.getY(), 2));
   }
 }
